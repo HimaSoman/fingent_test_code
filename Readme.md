@@ -1,2 +1,2 @@
-Run the code in WAMP server
-URL will be localhost/invoice
+1) Run the code in WAMP server
+2) URL will be localhost/invoice
