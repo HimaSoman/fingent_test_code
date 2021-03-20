@@ -1,0 +1,34 @@
+body { font-family: sans-serif;}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { font-family: sans-serif; }
+@page {
+    size: auto;/*auto is the initial value*/
+    overflow: hidden;
+    /*size: A4 portrait;*/
+    margin: 15px 20px;   /*this affects the margin in the printer settings */
+    /*size: 21cm 29.7cm;*/
+    /*margin: 30mm 45mm 30mm 45mm;*/  /*change the margins as you want them to be.*/
+}
+table, figure {
+  page-break-inside: avoid;
+}
+h1, h2, h3, h4, h5 {
+  page-break-after: avoid;
+}
+.wrapper {
+    page-break-after: avoid;
+}
+
+.print-inner-content .media-heading > b{ font-size: 12px!important; }
+.panel-title{ font-size: 13px!important;  }
+@media print {
+	html, body { height: 99%; -webkit-print-color-adjust: exact !important;}
+	.bg-dark{ background-color: #343a40!important; -webkit-print-color-adjust: exact !important;}
+}
+.panel-default { border-color: #b9b9b9; }
+
+.print-inner-content p, .print-inner-content h4, .print-inner-content h3 { font-size: 14px!important; }
+
+.font-13_{ font-size:13px!important; }
+
+
+
